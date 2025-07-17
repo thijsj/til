@@ -2,11 +2,27 @@
 
 import pathlib
 import argparse
+import subprocess
 
 base_path = pathlib.Path(__file__).resolve().parent
 
 start_block = "<!--index start-->"
 end_block = "<!--index end-->"
+
+
+def git_date(fp):
+    """Get the last commit date of a file."""
+    try:
+        output = subprocess.check_output(
+            ["git", "log", "--follow", "--format=%ad", "--date=short", fp.as_posix()],
+            text=True,
+        )
+        date_lines = [d.strip() for d in output.splitlines() if d.strip()]
+        if date_lines:
+            return date_lines[0]
+    except subprocess.CalledProcessError:
+        pass
+    return "Unknown"
 
 
 def find_docs():
@@ -19,6 +35,7 @@ def find_docs():
         doc_data = {
             "link": doc.relative_to(base_path).as_posix(),
             "title": doc.stem,
+            "date": git_date(doc),
         }
         parent_data["docs"].append(doc_data)
         for line in doc_lines:
@@ -39,7 +56,7 @@ def update_readme(dry_run=False):
     for parent in sorted(docs.values(), key=lambda x: x["title"]):
         new_lines.append(f"## {parent['title']}")
         for doc in sorted(parent["docs"], key=lambda x: x["title"]):
-            new_lines.append(f"- [{doc['title']}]({doc['link']})")
+            new_lines.append(f"- [{doc['title']}]({doc['link']}) - {doc['date']}")
         new_lines.append("")
 
     new_lines += lines[end_index:]
