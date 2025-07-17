@@ -3,11 +3,16 @@
 import pathlib
 import argparse
 import subprocess
+import time
 
 base_path = pathlib.Path(__file__).resolve().parent
 
 start_block = "<!--index start-->"
 end_block = "<!--index end-->"
+
+
+def today_date():
+    return time.strftime("%Y-%m-%d", time.localtime())
 
 
 def git_date(fp):
@@ -21,8 +26,8 @@ def git_date(fp):
         if date_lines:
             return date_lines[0]
     except subprocess.CalledProcessError:
-        pass
-    return "Unknown"
+        return "unknown"
+    return today_date()
 
 
 def find_docs():
