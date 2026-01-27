@@ -4,7 +4,7 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 
 <!--index start-->
 ## 1Password
-- [Deel wachtwoord veilig met anderen](1password/share-password.md) - 2026-01-27
+- [Share passwords with non-1Password users](1password/share-password.md) - 2026-01-27
 
 ## Framework
 - [Bios Update Framework Laptop](framework/update-bios.md) - 2025-07-17
