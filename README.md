@@ -3,6 +3,9 @@
 These are/will be my snippets of things I learned. The idea is to write stuff I come across when trying to solve something. Inspired by [Simon Willison](https://til.simonwillison.net/) while looking up something about pytest.
 
 <!--index start-->
+## 1Password
+- [Deel wachtwoord veilig met anderen](1password/share-password.md) - 2026-01-27
+
 ## Framework
 - [Bios Update Framework Laptop](framework/update-bios.md) - 2025-07-17
 
