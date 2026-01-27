@@ -1,3 +1,5 @@
-# Deel wachtwoord veilig met anderen
+# Share passwords with non-1Password users
 
-Met 1Password kun je makkelijk wachtwoorden delen met niet-1Password gebruikers via een beveiligde link. Gebruik de "Share" knop en creeer een link. Voor extra veilig delen kun je de link ook instellen op eenmalig gebruik.
+As I am a 1Password user, I want to share passwords with people who do not use 1Password. This is very useful for sharing temporary access credentials or sensitive information securely. It it easily achieved by using 1Password's sharing feature. 
+
+Use the "Share" option in 1Password to generate a secure link that can be sent to non-1Password users. The recipient can access the shared password through the link without needing a 1Password account. For extra security, you can set to be readable only once.
