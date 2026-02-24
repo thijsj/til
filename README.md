@@ -12,6 +12,9 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 ## Git
 - [Get date of a file in Git](git/get-date-of-file.md) - 2025-07-17
 
+## Proton-Mail
+- [Dictionary settings](Proton-Mail/dictionary.md) - 2026-02-24
+
 ## Pytest
 - [Creating Integration Tests with Pytest](pytest/create-integrationtests-with-pytest.md) - 2025-07-17
 - [PyTest options in pyproject.toml](pytest/pytest-options-in-pyproject.md) - 2025-07-31
