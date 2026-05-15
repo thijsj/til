@@ -11,6 +11,7 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 
 ## Git
 - [Get date of a file in Git](git/get-date-of-file.md) - 2025-07-17
+- [SSH passthrough to other vm](git/ssh-passthrough.md) - 2026-05-15
 
 ## Proton-Mail
 - [Dictionary settings](Proton-Mail/dictionary.md) - 2026-02-24
