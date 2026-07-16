@@ -9,5 +9,5 @@ ansible -m debug -a "var=variable_name" host_name
 or for hostvars:
 
 ```bash
-ansible -m debug -a "var=hostvars['host_name'].get('variable_name')" <host_reference>
+ansible -m debug -a "var=hostvars[inventory_hostname].get('variable_name')" <host_reference>
 ```
