@@ -6,6 +6,9 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 ## 1Password
 - [Share passwords with non-1Password users](1password/share-password.md) - 2026-01-27
 
+## Ansible
+- [Check hostvars](ansible/check-hostvars.md) - 2026-07-16
+
 ## Debian
 - [Upgrade Debian Bookworm to Trixie](Debian/upgrade-bookworm-to-trixie.md) - 2026-07-13
 
