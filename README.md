@@ -26,4 +26,7 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 - [Creating Integration Tests with Pytest](pytest/create-integrationtests-with-pytest.md) - 2025-07-17
 - [PyTest options in pyproject.toml](pytest/pytest-options-in-pyproject.md) - 2025-07-31
 
+## Tools
+- [Create a smaller PDF](Tools/create-smaller-pdf.md) - 2026-07-29
+
 <!--index end-->
