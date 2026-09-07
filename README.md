@@ -29,4 +29,7 @@ These are/will be my snippets of things I learned. The idea is to write stuff I 
 ## Tools
 - [Create a smaller PDF](Tools/create-smaller-pdf.md) - 2026-07-29
 
+## Vim
+- [Pretty Print JSON](vim/pretty-print-json.md) - 2026-09-07
+
 <!--index end-->
